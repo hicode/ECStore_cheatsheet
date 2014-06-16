@@ -44,7 +44,14 @@ Kernel::router()->gen_url(
                 'full'=>1
             )
         );
+//按规则生成一个地址
 Kernel::router()->app->res_url;
+//资源地址
+Kernel::url_prefix();
+//index.php
+Kernel::this_url();
+//当前地址
+
 			</pre>
 <h6><i class="icon-code"></i> openapi_url 开放接口</h6>
 
@@ -57,7 +64,129 @@ Kernel::openapi_url('openapi.ectools_payment/parse/' . $this->app->app_id . '/ch
 Kernel::openapi_url('openapi.pam_callback','login',array('module'=>$module,'type'=>$this->type,'appid' => $this->appid,'redirect'=>$this->redirect_url));
 Kernel::openapi_url('openapi.ectools_payment/parse/wap/wap_payment_plugin_alipay_server', 'callback');
 </pre>
+<h6><i class="icon-code"></i> 其他</h6>
+<pre class="prettyprint lang-php">
+Kernel::single($class_name,$arg=null)
+//调用系统中的独立类，$arg为可选参数
+Kernel::log($message,$keepline=false,$filename=null);
+//日志
+Kernel::database();
+Kernel::service($srv_name,$filter=null);
+Kernel::servicelist($srv_name,$filter=null);
+Kernel::strip_magic_quotes(&$var);
+Kernel::set_lang($language);
+Kernel::get_lang();
+</pre>
+
 	</div>
+	
+	
+	
+	<div class="large-4 columns code-column">
+
+
+			<h4><a name="artisan" href="#artisan">Kernal</a> <a href="http://laravel.com/docs/artisan" title="Artisan CLI @ Laravel Docs"><i class="icon-file-text"></i></a></h4>
+			<h6><i class="icon-code"></i> router 路由</h6>
+			<pre class="prettyprint lang-php">
+Kernel::router()->app->base_url(1);
+Kernel::router()->gen_url(
+            array(
+            	'app'=>$v['app'],
+                'ctl'=>$v['ctl'],
+                'act'=>$v['act'],
+                'args'=>$v['params'],
+                'full'=>1
+            )
+        );
+//按规则生成一个地址
+Kernel::router()->app->res_url;
+//资源地址
+Kernel::url_prefix();
+//index.php
+Kernel::this_url();
+//当前地址
+
+			</pre>
+<h6><i class="icon-code"></i> openapi_url 开放接口</h6>
+
+<pre class="prettyprint lang-php">
+Kernel::openapi_url('openapi.b2c.callback.shoprelation','callback');
+Kernel::openapi_url('openapi.b2c.iframe.order.edit', 'edit', $url_params);
+Kernel::openapi_url('openapi.rpc_callback','async_result_handler',array('id'=>$rpc_id,'app_id'=>$this->app->app_id));
+Kernel::openapi_url('openapi.queue','worker',array('task_id'=>$task_id));
+Kernel::openapi_url('openapi.ectools_payment/parse/' . $this->app->app_id . '/chinapay_payment_plugin_chinapay', 'callback');
+Kernel::openapi_url('openapi.pam_callback','login',array('module'=>$module,'type'=>$this->type,'appid' => $this->appid,'redirect'=>$this->redirect_url));
+Kernel::openapi_url('openapi.ectools_payment/parse/wap/wap_payment_plugin_alipay_server', 'callback');
+</pre>
+<h6><i class="icon-code"></i> 其他</h6>
+<pre class="prettyprint lang-php">
+Kernel::single($class_name,$arg=null)
+//调用系统中的独立类，$arg为可选参数
+Kernel::log($message,$keepline=false,$filename=null);
+//日志
+Kernel::database();
+Kernel::service($srv_name,$filter=null);
+Kernel::servicelist($srv_name,$filter=null);
+Kernel::strip_magic_quotes(&$var);
+Kernel::set_lang($language);
+Kernel::get_lang();
+</pre>
+
+	</div>
+	
+	
+	<div class="large-4 columns code-column">
+
+
+			<h4><a name="artisan" href="#artisan">Kernal</a> <a href="http://laravel.com/docs/artisan" title="Artisan CLI @ Laravel Docs"><i class="icon-file-text"></i></a></h4>
+			<h6><i class="icon-code"></i> router 路由</h6>
+			<pre class="prettyprint lang-php">
+Kernel::router()->app->base_url(1);
+Kernel::router()->gen_url(
+            array(
+            	'app'=>$v['app'],
+                'ctl'=>$v['ctl'],
+                'act'=>$v['act'],
+                'args'=>$v['params'],
+                'full'=>1
+            )
+        );
+//按规则生成一个地址
+Kernel::router()->app->res_url;
+//资源地址
+Kernel::url_prefix();
+//index.php
+Kernel::this_url();
+//当前地址
+
+			</pre>
+<h6><i class="icon-code"></i> openapi_url 开放接口</h6>
+
+<pre class="prettyprint lang-php">
+Kernel::openapi_url('openapi.b2c.callback.shoprelation','callback');
+Kernel::openapi_url('openapi.b2c.iframe.order.edit', 'edit', $url_params);
+Kernel::openapi_url('openapi.rpc_callback','async_result_handler',array('id'=>$rpc_id,'app_id'=>$this->app->app_id));
+Kernel::openapi_url('openapi.queue','worker',array('task_id'=>$task_id));
+Kernel::openapi_url('openapi.ectools_payment/parse/' . $this->app->app_id . '/chinapay_payment_plugin_chinapay', 'callback');
+Kernel::openapi_url('openapi.pam_callback','login',array('module'=>$module,'type'=>$this->type,'appid' => $this->appid,'redirect'=>$this->redirect_url));
+Kernel::openapi_url('openapi.ectools_payment/parse/wap/wap_payment_plugin_alipay_server', 'callback');
+</pre>
+<h6><i class="icon-code"></i> 其他</h6>
+<pre class="prettyprint lang-php">
+Kernel::single($class_name,$arg=null)
+//调用系统中的独立类，$arg为可选参数
+Kernel::log($message,$keepline=false,$filename=null);
+//日志
+Kernel::database();
+Kernel::service($srv_name,$filter=null);
+Kernel::servicelist($srv_name,$filter=null);
+Kernel::strip_magic_quotes(&$var);
+Kernel::set_lang($language);
+Kernel::get_lang();
+</pre>
+
+	</div>
+	
 	</div>
 	<script src="assets/js/jquery-1.10.2.min.js"></script>
 	<script src="assets/js/google-code-prettify/prettify.js"></script>
